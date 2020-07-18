@@ -1,10 +1,11 @@
 html {
     scroll-behavior: smooth;
     max-width: 1366px;
+    margin: 0 auto;
 }
 .header {
 	width: 100%;
-    height: auto
+    height: auto;
 }
 
 .navbar{
@@ -44,6 +45,7 @@ html {
     height: auto;
     font-size: 70%;
 }
+
 a:hover{
     background-color: white;
     color: #000;
@@ -73,13 +75,20 @@ a:hover{
     background-size: cover;
 }
 .line{
-    font-size: 60%;
+    font-size: 90%;
+    line-height: 80%;
     opacity: 1;
 }
 #buttons{
     width: 20%;
     margin: 0 auto;
     font-size: larger;
+    background-color: inherit;
+    color: white;
+}
+#buttons:hover{
+    background-color: white;
+    color: black;
 }
 .about {
     padding-top: 10%;
@@ -88,6 +97,10 @@ a:hover{
     margin-bottom: 10px;;
     text-align: center;
     border: solid;
+}
+.touch:hover {
+    background-color: white;
+    color: black;
 }
 h2{
     font-size: 250%;
@@ -105,6 +118,7 @@ h2{
     opacity: 1;
     font-size: 120%;
 }
+
 .quote{
     width: 80%;
     height: 80%;
@@ -147,6 +161,7 @@ img{
     background-color: black;
 }
 
+
 .caption {
     margin: 10%;
     width: 40%;
@@ -155,13 +170,10 @@ img{
     padding: 1%;
     font-size: 80%;
     font-family: Montserrat;
-    border: blanchedalmond solid 0.5px;
-    box-shadow: 10px 9px 10px 0px silver;
 }
 #pic{
     width: 80%;
     padding: none;
-    border: solid grey;
     box-shadow: none;
 }
 .donate {
@@ -174,7 +186,10 @@ img{
     font-weight: bold;
     
 }
-
+.donate:hover{
+    background-color: white;
+    color: black;
+}
 #contact {
     background-color:white;
     width: 85%;
@@ -216,6 +231,8 @@ img{
     padding: 5%;
     z-index: 99;
     opacity: 0.9;
+    background-color: black;
+    color: white;
 }
 
 #footer{
@@ -253,15 +270,18 @@ a:hover{
 	border:solid;
 	border-color: white;
 	background-color: blue;
-
 }
 #add{
     color: wheat;
 }
+.copyright{
+    background-color: white;
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     html{
-        margin: 0.5%;
+        
+        font-size: 150%;
     }
     .navbar {
       display: none;
@@ -310,6 +330,7 @@ a:hover{
     }
     img {
         width: 100%;
+
         margin: 0 auto;
     }
     #jump2{
@@ -333,7 +354,7 @@ a:hover{
     }
     .navbar2{
         display: flex;
-        flex-direction: column;
+        flex-direction: ROW;
         font-size: 100%;
     }
     .copyright{
