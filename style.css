@@ -1,6 +1,10 @@
 html {
     scroll-behavior: smooth;
     font-size-adjust: 0.50;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .header {
 	width: 100%;
