@@ -1,45 +1,49 @@
 html {
     scroll-behavior: smooth;
     font-size-adjust: 0.50;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+
 }
 .header {
 	width: 100%;
-	height: auto;
+    height: auto
 }
 
 .navbar{
+    display: grid;
+	font-size: 150%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0%;
+    width: 100%;
+    height:auto;
+    padding: auto;
 	font-family: Montserrat;
 	position: fixed;
 	top: 0px;
 	left: 0px;
     background-color: black;
     opacity: 0.9;
-	display: flex;
-	flex-direction: row;
-	font-size: 20px;
-	width: 97%;
-	padding: 30px;
-    justify-content: space-around;
-	z-index: 999;
+    z-index: 999;
 	
 }
 .navbar a{
     text-decoration:none;
+    width: 60%;
+    align-self: center;
+    align-items: center;
     opacity: none;
 	color: white;
-	padding: 30px;
-	margin-left: 10px;
-	align-items: stretch;
+	padding:3%;
+    align-items: stretch;
+    max-width: 100%;
+    height: auto;
+    max-height: max-content;
 }
-.border{
-	border:solid;
-	border-color: white;
-	background-color: blue;
-
+.borders{
+    border: white solid 0.5px;
+    background-color: blue;
+    width: 50%;
+    height: auto;
+    font-size: 70%;
 }
 a:hover{
     background-color: white;
@@ -47,6 +51,8 @@ a:hover{
 }
 
 #head{
+    display: grid;
+    grid-column: auto;
     padding: 1%;
     font-size: 120%;
     color: wheat;
@@ -63,7 +69,7 @@ a:hover{
     font-size: 150%;
     background-image: url("images/background.jpg");
     opacity: 1;
-    line-height: 100%;
+    line-height: 200%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -71,11 +77,15 @@ a:hover{
     font-size: 60%;
     opacity: 1;
 }
-.button{
-    border-radius: 20px;
+#button{
+    position: relative;
+    margin: 0 auto;
+    border-radius: 2px;
+    width: 15%;
+    height: 100%;
     padding: 1%;
     opacity: 1;
-    border: solid 2px;
+    border: solid 1px;
 }
 .about {
     padding-top: 10%;
@@ -183,14 +193,15 @@ img{
 
 #box2{
     margin: 10%;
-    width: 350px;
+    width: 70%;
     height: auto;
-    padding: 10%;
+    padding: 5%;
     font-size: 140%;
     line-height: 200%;
     text-align: center;
     border: black solid;
     border-radius: 4rem;
+    max-width: 90%;
 }
 .snippet{
     width: 80%;
