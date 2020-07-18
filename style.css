@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
-    font-size-adjust: 0.50;
-
+    max-width: 1366px;
 }
 .header {
 	width: 100%;
@@ -77,15 +76,10 @@ a:hover{
     font-size: 60%;
     opacity: 1;
 }
-#button{
-    position: relative;
+#buttons{
+    width: 20%;
     margin: 0 auto;
-    border-radius: 2px;
-    width: 15%;
-    height: 100%;
-    padding: 1%;
-    opacity: 1;
-    border: solid 1px;
+    font-size: larger;
 }
 .about {
     padding-top: 10%;
@@ -112,6 +106,9 @@ h2{
     font-size: 120%;
 }
 .quote{
+    width: 80%;
+    height: 80%;
+    padding-top: 15%;
     display: grid;
 	font-size: 30px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -120,16 +117,13 @@ h2{
     height:auto;
     max-width: 100%;
     margin: 0 auto;
+    border: solid;
 }
 #boxes {
-	margin: 10%;
-	width: 100%;
-	height: auto;
     text-align: center;
     line-height: 160%;
     background-color: black;
     opacity: 0.8;
-    padding: 2%;
     color: blanchedalmond;
     box-shadow: 20px 20px 10px black;
     border: ivory solid 2px;
@@ -182,7 +176,7 @@ img{
 }
 
 #contact {
-    background-color: rgb(224, 208, 208);
+    background-color:white;
     width: 85%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -264,3 +258,91 @@ a:hover{
 #add{
     color: wheat;
 }
+
+@media only screen and (max-width: 600px) {
+    html{
+        margin: 0.5%;
+    }
+    .navbar {
+      display: none;
+      justify-content: space-around;
+      align-self: center;
+      height: auto;
+      margin-bottom: 10%;
+      font-size: 130%;
+    }
+    .navbar a{
+        width: 40%;
+        margin: 0 auto;
+        font-size: 90%;
+    }
+    .borders{
+        background-color: black;
+        border:none;
+    }
+
+    
+    #head{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 70%;
+        line-height: 200%;
+        border-radius: 0px;
+    }
+    .about{
+        font-size: 80%;
+        line-height: 900%;
+    }
+    #button{
+        width: 50%;;
+        font-size: 100%;
+    }
+    .line{
+        width: 100%;
+        font-size: 70%;
+    }
+
+    #boxes{
+        width: 100%;
+        margin: 20px auto;
+        height: auto;
+
+    }
+    img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #jump2{
+        display: flex;
+        flex-direction: column;
+    }
+    .caption{
+        width: 80%;
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+    }
+    #box2{
+        font-size: 100%;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar2{
+        display: flex;
+        flex-direction: column;
+        font-size: 100%;
+    }
+    .copyright{
+        width: 100%;
+        font-size: 90%;
+    }
+    .title{
+        background-image: url("images/background.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+  }
