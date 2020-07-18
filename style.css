@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    max-width: 1366px;
+    
     margin: 0 auto;
 }
 .header {
@@ -82,7 +82,7 @@ a:hover{
 #buttons{
     width: 20%;
     margin: 0 auto;
-    font-size: larger;
+    font-size: 100%;
     background-color: inherit;
     color: white;
 }
@@ -184,9 +184,9 @@ img{
     border-radius: 100px;  
     font-size: 200%;
     font-weight: bold;
-    
+    color: white;
 }
-.donate:hover{
+.donations a:hover{
     background-color: white;
     color: black;
 }
